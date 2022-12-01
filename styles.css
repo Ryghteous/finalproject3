@@ -1,0 +1,280 @@
+/*Ryan Vicario*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*start content*/
+#main-content {
+    width: 100%;
+}
+
+#skip {
+	display: none;
+}
+
+header {
+    padding: 20px 20px 20px 20px;
+    padding-bottom: 40px;
+    background-color: #DB9F34;
+}
+
+header h1 {
+    font-size: 25px;
+    float: left;
+}
+
+.sr-only {
+    display: none;
+}
+
+#menu-toggle {
+	overflow: hidden;
+	position: relative;
+    float: right;
+}
+
+#menu-toggle li {
+	display: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+}
+
+p, small {
+    font-family: 'Comfortaa', sans-serif;
+}
+#about {
+    padding: 20px 20px 20px 20px;
+    background-color: #DAD3B7;
+}
+
+#about h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+#about p {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#about img {
+    width: 100%;
+}
+
+#books {
+    padding: 20px 20px 20px 20px;
+}
+
+#books img {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    align-content: center;
+}
+
+#books h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#books h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#books p {
+    font-size: 16px;
+    text-align: center;
+}
+
+#events {
+    padding: 20px 20px 20px 20px;
+    background-color: #D74452;
+}
+
+#events h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#events h3 {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#events p {
+    font-size: 16px;
+    text-align: center;
+}
+
+#newsletter {
+    padding: 20px 20px 20px 20px;
+    background-color: #2D838D;
+}
+
+#newsletter h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+label {
+    font-family: 'Comfortaa', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input {
+    font-family: 'Comfortaa', sans-serif;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#company {
+    padding: 20px 20px 20px 20px;
+    background-color: #DB8E36;
+}
+
+#company h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#company p {
+    font-size: 16px;
+    text-align: center;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    background-color: #DAD3B7;
+    padding: 20px 20px 20px 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    #menu-toggle li {
+        display: block;
+    }
+
+    #menu-toggle {
+        overflow: visible;
+        position: relative;
+        float: right;
+        display: block;
+    }
+
+    #books div {
+        display: grid;
+        grid-template-columns: 400px 400px;
+		grid-row: auto;
+		grid-column-gap: 40px;
+		grid-row-gap: 40px;
+		margin: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+    }
+
+    #events div {
+        display: grid;
+        grid-template-columns: 400px 400px;
+		grid-row: auto;
+		grid-column-gap: 40px;
+		grid-row-gap: 40px;
+		margin: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #main-content {
+        width: 100%;
+    }
+
+    #events div {
+        display: grid;
+        grid-template-columns: 400px 400px;
+		grid-row: auto;
+		grid-column-gap: 40px;
+		grid-row-gap: 40px;
+		margin: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+        justify-content: center;
+    }
+
+    #books div {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+		grid-row: auto;
+		grid-column-gap: 40px;
+		grid-row-gap: 40px;
+		margin: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+        justify-content: center;
+    }
+}
+
